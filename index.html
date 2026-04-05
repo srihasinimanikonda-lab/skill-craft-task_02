@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stopwatch</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="top-section">
+  <div class="container">
+    <h2>Stopwatch</h2>
+    <div id="display">00:00:00</div>
+
+    <button onclick="start()">Start</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="lap()">Lap</button>
+
+    <br><br>
+    <button onclick="toggleHow()">⚙️ How It Works</button>
+
+    <ul id="laps"></ul>
+  </div>
+</div>
+
+<div id="howSection">
+  <h2>How It Works</h2>
+
+  <div class="cards">
+    <div class="card"><b>Start</b><p>Begins counting time</p></div>
+    <div class="card"><b>Pause</b><p>Stops time temporarily</p></div>
+    <div class="card"><b>Reset</b><p>Resets to zero</p></div>
+    <div class="card"><b>Lap</b><p>Saves current time</p></div>
+  </div>
+</div>
+
+<!-- IMPORTANT: defer is the KEY -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
